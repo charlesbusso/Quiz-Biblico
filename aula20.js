@@ -306,7 +306,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             nivel.textContent = 'Nivel 1'
          }else if((numeroDaQuestao => 11)&& (numeroDaQuestao <= 20)){
             nivel.textContent = 'Nível 2'
-         }else if((numeroDaQuestao => 20)&&(numeroDaQuestao <= 30)){
+         }else if((numeroDaQuestao => 21)&&(numeroDaQuestao <= 30)){
             nivel.textContent = 'Nível 3'
          }else(nivel)
 
