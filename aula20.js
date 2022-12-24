@@ -300,13 +300,13 @@ function verificarSeAcertou(nQuestao, resposta) {
         titulo.textContent = "Parabéns você acertou 😊"
         
        }else {
-        titulo.textContent = "Que pena, você errou 😢 !! Precisa estudar mais!"
+        titulo.textContent = "Que pena, você errou 😢 !!"
          }
          if (numeroDaQuestao < 10){
             nivel.textContent = 'Nivel 1'
          }else if((numeroDaQuestao => 11)&& (numeroDaQuestao <= 20)){
             nivel.textContent = 'Nível 2'
-         }else if((numeroDaQuestao => 21)&&(numeroDaQuestao <= 30)){
+         }else if((numeroDaQuestao > 20)&&(numeroDaQuestao <= 30)){
             nivel.textContent = 'Nível 3'
          }else(nivel)
 
