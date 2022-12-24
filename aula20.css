@@ -37,12 +37,13 @@ section {
 
 h1 {
     text-align: center;
-    font-size: 1.35rem;
-    margin: 0.625rem;
+    font-size: 1.15rem;
+    margin: 0.425rem;
 }
 
 .centro {
     text-align: center;
+    font-size: 1.1rem;
 }
 
 .questao {
@@ -60,6 +61,7 @@ h1 {
 
 #pergunta {
     margin-left: 1rem;
+    font-size: 1.1rem;
 }
 
 /* article que acomoda a questao completa */
@@ -94,12 +96,12 @@ h1 {
 #instrucoes {
     background: #ccc;
     color: #191919;
-    padding: 0.425rem;
+    padding: 0.225rem;
     border-radius: 8px;
 
     display: flex;
     justify-content: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     animation: piscar .75s infinite alternate;
 }
 
