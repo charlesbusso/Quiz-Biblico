@@ -222,7 +222,7 @@ const q21 = {
     alternativaA : "Eclesiastes, Provérbios e Samuel",
     alternativaB : "Jeremias, Provérbios e Cântico dos Cânticos",
     alternativaC : "Lamentações, Salmos e Provérbios",
-    alternativaD : "Eclesiastes, Provérbios e Cântico dos Cânticos ",
+    alternativaD : "Eclesiastes, Provérbios e Cântico dos Cânticos",
     correta : "Eclesiastes, Provérbios e Cântico dos Cânticos",
 }
 const q22 = {
@@ -231,7 +231,7 @@ const q22 = {
     alternativaA : "Eclesiastes, Provérbios e Samuel",
     alternativaB : "Jeremias, Provérbios e Cântico dos Cânticos",
     alternativaC : "Lamentações, Salmos e Provérbios",
-    alternativaD : "Eclesiastes, Provérbios e Cântico dos Cânticos ",
+    alternativaD : "Eclesiastes, Provérbios e Cântico dos Cânticos",
     correta : "Eclesiastes, Provérbios e Cântico dos Cânticos",
 }
 
