@@ -227,7 +227,7 @@ const q21 = {
 }
 const q22 = {
     numQuestao : 22,
-    pergunta : "Complete a frase de 1° Coríntios cap.16 ! Onde está, ó morte, o teu aguilhão ? Onde está, ó inferno,...", 
+    pergunta : "Complete a frase de 1° Coríntios cap.15 ! Onde está, ó morte, o teu aguilhão ? Onde está, ó inferno,...", 
     alternativaA : "A tua espada",
     alternativaB : "A tua flecha",
     alternativaC : "A tua vitória",
