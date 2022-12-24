@@ -77,7 +77,7 @@ const q5 = {
     pergunta : "Deus disse a quem : Anda na minha presença e sê perfeito", 
     alternativaA : "Adão",
     alternativaB : "Jacó",
-    alternativaC : "Abraão",
+    alternativaC : "Abrão",
     alternativaD : "moisés",
     correta : "Abraão",
 } 
@@ -150,12 +150,12 @@ const q13 = {
     alternativaA : "Samuel",
     alternativaB : "Davi",
     alternativaC : "Jeremias",
-    alternativaD : "Jonatas",
-    correta : "Jonatas",
+    alternativaD : "Jonatas filho de Siméia",
+    correta : "Jonatas filho de Siméia",
 }
 const q14 = {
     numQuestao : 14,
-    pergunta : " Quem era o melhor amigo de Davi ?", 
+    pergunta : " Quem era o amigo de Davi que disse: Onde você for eu também vou ?", 
     alternativaA : "Samuel",
     alternativaB : "Itai",
     alternativaC : "Jeremias",
@@ -227,17 +227,88 @@ const q21 = {
 }
 const q22 = {
     numQuestao : 22,
-    pergunta : "Qual é o livro de Salomão na Bíblia", 
-    alternativaA : "Eclesiastes, Provérbios e Samuel",
-    alternativaB : "Jeremias, Provérbios e Cântico dos Cânticos",
-    alternativaC : "Lamentações, Salmos e Provérbios",
-    alternativaD : "Eclesiastes, Provérbios e Cântico dos Cânticos",
-    correta : "Eclesiastes, Provérbios e Cântico dos Cânticos",
+    pergunta : "Complete a frase de 1° Coríntios cap.16 ! Onde está, ó morte, o teu aguilhão ? Onde está, ó inferno,...", 
+    alternativaA : "A tua espada",
+    alternativaB : "A tua flecha",
+    alternativaC : "A tua vitória",
+    alternativaD : "A tua derrota",
+    correta : "A tua vitória",
+}
+const q23 = {
+    numQuestao : 23,
+    pergunta : "Qual o maior versículo da Bíblia ?", 
+    alternativaA : "Ester cap. 8 vers. 9",
+    alternativaB : "Salmos cap. 17 vers. 2",
+    alternativaC : "Eclesiastes cap. 9 vers. 11",
+    alternativaD : "Jeremias cap. 27 vers. 18",
+    correta : "Ester cap. 8 vers. 9",
+}
+const q24 = {
+    numQuestao : 24,
+    pergunta : "Qual foi o 1° fundamento do muro da Nova Jerusalém ?", 
+    alternativaA : "Ametista",
+    alternativaB : "Sardônica",
+    alternativaC : "Berilo",
+    alternativaD : "Jaspe",
+    correta : "Jaspe",
+}
+const q25 = {
+    numQuestao : 25,
+    pergunta : "Quando o 3° Anjo derramou a sua taça nos rios e nas fontes, as águas se tornaram em que ? ", 
+    alternativaA : "Sangue",
+    alternativaB : "Lodo",
+    alternativaC : "Em barro",
+    alternativaD : "Amargas",
+    correta : "Sangue",
+}
+const q26 = {
+    numQuestao : 26,
+    pergunta : "Em Apocalipse cap. 1 vers. 20 diz que os sete castiçais que viste, são o que ?", 
+    alternativaA : "A setes Chaves de Davi",
+    alternativaB : "sete Anjos",
+    alternativaC : "As setes Igrejas",
+    alternativaD : "As setes Cidades",
+    correta : "As setes Igrejas",
+}
+const q27 = {
+    numQuestao : 27,
+    pergunta : "Do que fala o capítulo 13 de 1° Coríntios", 
+    alternativaA : "Da fé",
+    alternativaB : "Da Caridade",
+    alternativaC : "Da esperança",
+    alternativaD : "Da morte",
+    correta : "Da Caridade",
+}
+const q28 = {
+    numQuestao : 28,
+    pergunta : "Uma mão misteriosa apareceu diante de um Rei e seus convidados e escrerviam defronte de um castiçal. Que Rei era ? ", 
+    alternativaA : "Belsazar",
+    alternativaB : "Nabucodonosor",
+    alternativaC : "Dario",
+    alternativaD :  "Davi",
+    correta : "Belsazar",
+}
+const q29 = {
+    numQuestao : 29,
+    pergunta : "Na armadura de Deus, o que simboliza o escudo ?", 
+    alternativaA : "A oração",
+    alternativaB : "A verdade",
+    alternativaC : "A fé",
+    alternativaD : "A paz",
+    correta : "A fé",
+}
+const q30 = {
+    numQuestao : 30,
+    pergunta : "Em Apocalipse, o sexto anjo derramou a sua taça em qual rio ?", 
+    alternativaA : "Rio Jordão",
+    alternativaB : "Rio Hidéquel",
+    alternativaC : "Rio Eufrates",
+    alternativaD : "Rio Pisom",
+    correta : "Rio Eufrates",
 }
 
-
 //constante com um array de objetos com todas as questões
-const questoes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20, q21, q22 ]
+const questoes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20, q21, q22, q23, q24, q25, q26, q27, q28, q29, q30]
 
 let numero = document.querySelector('#numero')
 let total = document.querySelector('#total')
@@ -302,11 +373,11 @@ function verificarSeAcertou(nQuestao, resposta) {
        }else {
         titulo.textContent = "Que pena, você errou 😢 !!"
          }
-         if (numeroDaQuestao <= 10){
+         if ((numeroDaQuestao > 0)||(numeroDaQuestao < 10)){
             nivel.textContent = 'Nivel 1'
-         }else if((numeroDaQuestao => 11)&&(numeroDaQuestao <= 20)){
+         }else if((numeroDaQuestao > 10)||(numeroDaQuestao < 21)){
             nivel.textContent = 'Nível 2'
-         }else if((numeroDaQuestao > 20)&&(numeroDaQuestao <= 30)){
+         }else if((numeroDaQuestao > 20)||(numeroDaQuestao <= 30)){
             nivel.textContent = 'Nível 3'
          }else(nivel)
 
@@ -335,7 +406,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             titulo.textContent = ''
         }
 
-       }, 950)
+       }, 1650)
 
        desbloquearAlternativas()
 }
