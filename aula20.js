@@ -128,7 +128,7 @@ const q10 = {
 }
 const q11 = {
     numQuestao : 11,
-    pergunta : "Davi cometeu um adultério e depois se casou com a moça, que era ela ?", 
+    pergunta : "Davi cometeu um adultério e depois se casou com a moça, quem era ela ?", 
     alternativaA : "Miriã",
     alternativaB : "Jeosebede",
     alternativaC : "Rebeca",
@@ -218,7 +218,7 @@ const q20 = {
 }
 const q21 = {
     numQuestao : 21,
-    pergunta : "Qual é o livro de Salomão na Bíblia", 
+    pergunta : "Quais são os livros de Salomão na Bíblia", 
     alternativaA : "Eclesiastes, Provérbios e Samuel",
     alternativaB : "Jeremias, Provérbios e Cântico dos Cânticos",
     alternativaC : "Lamentações, Salmos e Provérbios",
@@ -281,7 +281,7 @@ const q27 = {
 }
 const q28 = {
     numQuestao : 28,
-    pergunta : "Uma mão misteriosa apareceu diante de um Rei e seus convidados e escrerviam defronte de um castiçal. Que Rei era ? ", 
+    pergunta : "Uma mão misteriosa apareceu diante de um Rei e seus convidados e escrevia defronte de um castiçal. Que Rei era ? ", 
     alternativaA : "Belsazar",
     alternativaB : "Nabucodonosor",
     alternativaC : "Dario",
@@ -373,11 +373,11 @@ function verificarSeAcertou(nQuestao, resposta) {
        }else {
         titulo.textContent = "Que pena, você errou 😢 !!"
          }
-         if ((numeroDaQuestao > 0)||(numeroDaQuestao < 10)){
+         if ((numeroDaQuestao > 0)&&(numeroDaQuestao < 10)){
             nivel.textContent = 'Nivel 1'
-         }else if((numeroDaQuestao > 10)||(numeroDaQuestao < 21)){
+         }else if((numeroDaQuestao > 10)&&(numeroDaQuestao < 21)){
             nivel.textContent = 'Nível 2'
-         }else if((numeroDaQuestao > 20)||(numeroDaQuestao <= 30)){
+         }else if((numeroDaQuestao > 20)&&(numeroDaQuestao <= 30)){
             nivel.textContent = 'Nível 3'
          }else(nivel)
 
