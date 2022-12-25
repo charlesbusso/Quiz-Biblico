@@ -79,7 +79,7 @@ const q5 = {
     alternativaB : "Jacó",
     alternativaC : "Abrão",
     alternativaD : "moisés",
-    correta : "Abraão",
+    correta : "Abrão",
 } 
 const q6 = {
     numQuestao : 6,
