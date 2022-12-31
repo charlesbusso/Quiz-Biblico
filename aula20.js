@@ -45,7 +45,7 @@ const q1 = {
 
     const q2 = {
         numQuestao : 2,
-        pergunta : "Como Moisés foi encontrado ?",
+        pergunta : "Como Jesus foi encontrado ?",
         alternativaA : "Na cama",
         alternativaB : "Manjedoura",
         alternativaC : "Berço",
@@ -191,7 +191,7 @@ const q17 = {
 }
 const q18 = {
     numQuestao : 18,
-    pergunta : " Quem era os filhos de Noemi?", 
+    pergunta : " Quem eram os filhos de Noemi?", 
     alternativaA : "José e Judá",
     alternativaB : "Jacó e Esaúl",
     alternativaC : "Malom e Quiliom",
