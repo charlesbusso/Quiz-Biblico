@@ -456,9 +456,9 @@ function fimDoJogo() {
         pergunta.textContent = "Precisa estudar mais, Você não sabe muito sobre a Bíblia 😢!"
     }else if((pontos => 80)&&(pontos <= 150)){
         pergunta.textContent = "Você acertou algumas questões, mais tem que estudar mais! 😢"
-    }else if((pontos => 160)&&(pontos <= 290)){
+    }else if((pontos => 160)&&(pontos < 290)){
         pergunta.textContent = "Parabéns, Você sabe bastante da Bíblia 😊"
-    }else if((pontos => 300)){ 
+    }else if((pontos => 290)){ 
     pergunta.textContent = "Parabéns, Você acertou todas as perguntas e sabe muito, mais muito sobre a Bíblia 😊😊😊😊😊"
     }else (pergunta.textContent = '') 
 
