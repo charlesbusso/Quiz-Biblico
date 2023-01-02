@@ -2,9 +2,13 @@
 let titulo = document.querySelector('h1')
 let instrucoes = document.querySelector('#instrucoes')
 let aviso = document.querySelector('#aviso')
+let progresso = document.querySelector('progresso')
 let pontos = 0 // pontos para o placar
 let placar = 0 // placar
 let nivel = document.querySelector('h2')
+let somAcerto = document.querySelector('#somAcerto')
+let somErro = document.querySelector('#somErro')
+let somAplausos = document.querySelector('#somAplausos')
 
 // pergunta
 
@@ -18,7 +22,7 @@ let b = document.querySelector('#b')
 let c = document.querySelector('#c')
 let d = document.querySelector('#d')
 //article com a class questao
-let articleQuestoes = document.querySelector('questoes')
+let articleQuestoes = document.querySelector('.questoes')
 let alternativas = document.querySelector('#alternativas')
 
 
@@ -347,32 +351,60 @@ function proximaQuestao(nQuestao) {
     c.setAttribute('value', nQuestao+'C')
     d.setAttribute('value', nQuestao+'D')
 }
+alternativas.addEventListener('dblclick', () => {
+    pontos -= 10
+    if(numQuestao.value == 10 && pontos == 110){
+        pontos = 100
+    }
+
+})
 
 function bloquearAlternativas() {
-    a.classList.add('bloqueado')
-    b.classList.add('bloqueado')
-    c.classList.add('bloqueado')
-    d.classList.add('bloqueado')
+  alternativas.classList.add('bloqueado')
 }
 
+
 function desbloquearAlternativas() {
-    a.classList.remove('bloqueado')
-    b.classList.remove('bloqueado')
-    c.classList.remove('bloqueado')
-    d.classList.remove('bloqueado')
+    alternativas.classList.remove('bloqueado')
 }
+function piscarNoAcerto(){
+    articleQuestoes.classList.remove('errou')
+    articleQuestoes.classList.add('acertou')
+
+}
+function piscarNoErro(){
+    articleQuestoes.classList.remove('acertou')
+    articleQuestoes.classList.add('errou')
+}
+function tirarPiscar(){
+    articleQuestoes.classList.remove('acertou')
+    articleQuestoes.classList.remove('errou')
+}
+
+
 function verificarSeAcertou(nQuestao, resposta) {
     let numeroDaQuestao = nQuestao.value
 
     let respostaEscolhida = resposta.textContent
     let certa = questoes[numeroDaQuestao].correta
     if(respostaEscolhida == certa) {
+        piscarNoAcerto()
+        somAcerto.play()
         pontos += 10
         titulo.textContent = "Parabéns você acertou 😊"
+        if(nQuestao.value == 1 && pontos == 20){
+            pontos = 10
+        }
         
        }else {
+        piscarNoErro()
+        somErro.play()
         titulo.textContent = "Que pena, você errou 😢 !!"
          }
+         setTimeout(() => {
+            tirarPiscar()
+         }, 700);
+      
          if ((numeroDaQuestao > 0)&&(numeroDaQuestao < 10)){
             nivel.textContent = 'Nivel 1'
          }else if((numeroDaQuestao > 10)&&(numeroDaQuestao < 21)){
@@ -382,12 +414,6 @@ function verificarSeAcertou(nQuestao, resposta) {
          }else(nivel)
 
          
-
-         
-
-         
-
-
 
        //atualizar  o placar
 
