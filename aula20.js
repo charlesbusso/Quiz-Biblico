@@ -123,12 +123,12 @@ const q9 = {
 }
 const q10 = {
     numQuestao : 10,
-    pergunta : " Segundo Deus, o que Davi era ?", 
-    alternativaA : "Sacerdote",
-    alternativaB : "O coração de Deus",
-    alternativaC : "Rei muito bom",
-    alternativaD : "Rei muito mal",
-    correta : "O coração de Deus",
+    pergunta : " Qual o nome do segundo rio que saia do Éden pra regar o jardim ?", 
+    alternativaA : "Hidéquel",
+    alternativaB : "Eufrates",
+    alternativaC : "Pisom",
+    alternativaD : "Giom",
+    correta : "Giom",
 }
 const q11 = {
     numQuestao : 11,
