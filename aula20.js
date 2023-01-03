@@ -403,13 +403,13 @@ function verificarSeAcertou(nQuestao, resposta) {
          }
          setTimeout(() => {
             tirarPiscar()
-         }, 700);
+         }, 800);
       
-         if ((numeroDaQuestao > 0)&&(numeroDaQuestao < 10)){
+         if ((numeroDaQuestao > 0)&&(numeroDaQuestao <= 10)){
             nivel.textContent = 'Nivel 1'
-         }else if((numeroDaQuestao > 10)&&(numeroDaQuestao < 21)){
+         }else if((numeroDaQuestao => 11)&&(numeroDaQuestao <= 20)){
             nivel.textContent = 'Nível 2'
-         }else if((numeroDaQuestao > 20)&&(numeroDaQuestao <= 30)){
+         }else if((numeroDaQuestao => 21)&&(numeroDaQuestao <= 30)){
             nivel.textContent = 'Nível 3'
          }else(nivel)
 
@@ -426,6 +426,7 @@ function verificarSeAcertou(nQuestao, resposta) {
         proxima = numeroDaQuestao+1
         
         if (proxima > totalDeQuestoes) {
+            somAplausos()
             fimDoJogo()
         }else {
             proximaQuestao(proxima)
@@ -458,7 +459,7 @@ function fimDoJogo() {
         pergunta.textContent = "Você acertou algumas questões, mais tem que estudar mais! 😢"
     }else if((pontos => 160)&&(pontos < 290)){
         pergunta.textContent = "Parabéns, Você sabe bastante da Bíblia 😊"
-    }else if((pontos => 290)){ 
+    }else if((pontos => 300)){ 
     pergunta.textContent = "Parabéns, Você acertou todas as perguntas e sabe muito, mais muito sobre a Bíblia 😊😊😊😊😊"
     }else (pergunta.textContent = '') 
 
