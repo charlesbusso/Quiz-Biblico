@@ -353,7 +353,7 @@ function proximaQuestao(nQuestao) {
 }
 alternativas.addEventListener('dblclick', () => {
     pontos -= 10
-    if(numQuestao.value == 10 && pontos == 310){
+    if(numQuestao.value == 30 && pontos == 310){
         pontos = 300
     }
 
