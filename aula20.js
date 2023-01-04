@@ -433,7 +433,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             titulo.textContent = ''
         }
 
-       }, 1650);
+       }, 1650)
 
        desbloquearAlternativas()
 }
@@ -478,7 +478,7 @@ function fimDoJogo() {
         pontos = 0 
         location.reload();
 
-    }, 2000);
+    }, 2000)
 }
 
 
