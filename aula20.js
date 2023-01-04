@@ -478,7 +478,7 @@ function fimDoJogo() {
         pontos = 0 
         location.reload();
 
-    }, 2000)
+    }, 2000);
 }
 
 
