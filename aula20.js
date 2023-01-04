@@ -353,8 +353,8 @@ function proximaQuestao(nQuestao) {
 }
 alternativas.addEventListener('dblclick', () => {
     pontos -= 10
-    if(numQuestao.value == 10 && pontos == 110){
-        pontos = 100
+    if(numQuestao.value == 10 && pontos == 310){
+        pontos = 300
     }
 
 })
@@ -433,7 +433,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             titulo.textContent = ''
         }
 
-       }, 1650)
+       }, 1650);
 
        desbloquearAlternativas()
 }
