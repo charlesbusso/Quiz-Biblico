@@ -405,9 +405,9 @@ function verificarSeAcertou(nQuestao, resposta) {
             tirarPiscar()
          }, 800);
       
-         if ((numeroDaQuestao > 0)&&(numeroDaQuestao < 11)){
+         if ((numeroDaQuestao > 0)&&(numeroDaQuestao < 10)){
             nivel.textContent = 'Nivel 1'
-         }else if((numeroDaQuestao > 10)&&(numeroDaQuestao < 21)){
+         }else if((numeroDaQuestao > 10)&&(numeroDaQuestao < 20)){
             nivel.textContent = 'Nível 2'
          }else if((numeroDaQuestao > 20)&&(numeroDaQuestao < 31)){
             nivel.textContent = 'Nível 3'
