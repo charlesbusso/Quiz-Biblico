@@ -405,11 +405,11 @@ function verificarSeAcertou(nQuestao, resposta) {
             tirarPiscar()
          }, 800);
       
-         if ((numeroDaQuestao > 0)&&(numeroDaQuestao <== 10)){
+         if ((numeroDaQuestao > 0)&&(numeroDaQuestao =< 10)){
             nivel.textContent = 'Nivel 1'
-         }else if((numeroDaQuestao ==> 11)&&(numeroDaQuestao <= 20)){
+         }else if((numeroDaQuestao > 10)&&(numeroDaQuestao < 20)){
             nivel.textContent = 'Nível 2'
-         }else if((numeroDaQuestao ==> 21)&&(numeroDaQuestao <= 30)){
+         }else if((numeroDaQuestao > 20)&&(numeroDaQuestao < 30)){
             nivel.textContent = 'Nível 3'
          }else(nivel)
 
@@ -433,7 +433,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             titulo.textContent = ''
         }
 
-       }, 1650)
+       }, 1650);
 
        desbloquearAlternativas()
 }
@@ -478,7 +478,7 @@ function fimDoJogo() {
         pontos = 0 
         location.reload();
 
-    }, 2000)
+    }, 2000);
 }
 
 
