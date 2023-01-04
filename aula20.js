@@ -426,8 +426,8 @@ function verificarSeAcertou(nQuestao, resposta) {
         proxima = numeroDaQuestao+1
         
         if (proxima > totalDeQuestoes) {
-            somAplausos()
             fimDoJogo()
+            somAplausos.play()
         }else {
             proximaQuestao(proxima)
             titulo.textContent = ''
@@ -478,7 +478,7 @@ function fimDoJogo() {
         pontos = 0 
         location.reload();
 
-    }, 2000);
+    }, 2000)
 }
 
 
