@@ -405,11 +405,11 @@ function verificarSeAcertou(nQuestao, resposta) {
             tirarPiscar()
          }, 800);
       
-         if ((numeroDaQuestao > 0)&&(numeroDaQuestao < 9)){
+         if ((numeroDaQuestao > 0)&&(numeroDaQuestao < 11)){
             nivel.textContent = 'Nivel 1'
-         }else if((numeroDaQuestao > 9)&&(numeroDaQuestao < 19)){
+         }else if((numeroDaQuestao > 10)&&(numeroDaQuestao < 21)){
             nivel.textContent = 'Nível 2'
-         }else if((numeroDaQuestao > 19)&&(numeroDaQuestao < 30)){
+         }else if((numeroDaQuestao > 20)&&(numeroDaQuestao < 31)){
             nivel.textContent = 'Nível 3'
          }else(nivel)
 
@@ -459,7 +459,7 @@ function fimDoJogo() {
         pergunta.textContent = "Você acertou algumas questões, mais tem que estudar mais! 😢"
     }else if((pontos => 160)&&(pontos < 290)){
         pergunta.textContent = "Parabéns, Você sabe bastante da Bíblia 😊"
-    }else if(pontos == 300){ 
+    }else if(pontos => 300){ 
     pergunta.textContent = "Parabéns, Você acertou todas as perguntas e sabe muito, mais muito sobre a Bíblia 😊😊😊😊😊"
     }else (pergunta.textContent = '') 
 
