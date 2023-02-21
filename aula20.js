@@ -387,6 +387,22 @@ function tirarPiscar(){
     articleQuestoes.classList.remove('errou')
 }
 
+/*function verificarErro(nQuestao) {
+    let numeroDaQuestao = nQuestao.value
+    let erro = questoes[numeroDaQuestao].alternativas
+
+    if ((respostaEscolhida == erro)&&(erro == 3)){
+
+        piscarNoErro()
+        somErro.play()
+        titulo.textContent = "Que pena, você errou 😢 !!"
+        bloquearAlternativas();
+        fimDoJogo();
+    
+}
+
+}*/
+
 
 function verificarSeAcertou(nQuestao, resposta) {
     let numeroDaQuestao = nQuestao.value
@@ -464,6 +480,8 @@ function fimDoJogo() {
     b.setAttribute('value', '0')
     c.setAttribute('value', '0')
     d.setAttribute('value', '0')
+
+    
 
     if(pontos < 80){
         titulo.textContent = "Precisa estudar mais, Você não sabe muito sobre a Bíblia 😢!"
