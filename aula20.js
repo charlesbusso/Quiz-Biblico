@@ -38,12 +38,12 @@ const q0 = {
 }
 const q1 = {
     numQuestao : 1,
-    pergunta : "Quem matou Caim ?",
+    pergunta : "Quem matou Abel ?",
     alternativaA : "Sansão",
     alternativaB : "Jacó",
-    alternativaC : "Abel",
+    alternativaC : "Caim",
     alternativaD : "Moisés",
-    correta : "Abel",
+    correta : "Caim",
 
 }
 
