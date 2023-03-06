@@ -9,6 +9,11 @@ let nivel = document.querySelector('h2')
 let somAcerto = document.querySelector('#somAcerto')
 let somErro = document.querySelector('#somErro')
 let somAplausos = document.querySelector('#somAplausos')
+let totalChance = document.getElementById('totalChance')
+let chanceUm = document.getElementById('um')
+let chanceDois = document.getElementById('dois')
+let chanceTres = document.getElementById('tres')
+
 
 // pergunta
 
@@ -310,9 +315,190 @@ const q30 = {
     alternativaD : "Rio Pisom",
     correta : "Rio Eufrates",
 }
+const q31 = {
+    numQuestao : 31,
+    pergunta : "Arão tomou os pendentes de ouro do povo e com um burril ele formou qual animal ?", 
+    alternativaA : "Leão",
+    alternativaB : "Bezerro",
+    alternativaC : "Cordeiro",
+    alternativaD : "Urso",
+    correta : "Bezerro",
+}
+const q32 = {
+    numQuestao : 32,
+    pergunta : "Quais livors terminam com Interrogação", 
+    alternativaA : "Lamentações, Amós, Jonas",
+    alternativaB : "Lamentações, Jonas, Naum",
+    alternativaC : "Jonas, Naum, Provérbios",
+    alternativaD : "Naum, provérbios, Amós",
+    correta : "Lamentações, Jonas, Naum",
+}
+const q33 = {
+    numQuestao : 33,
+    pergunta : "Deus deu a quem sabedoria e inteligência para saber fazer toda a obra a serviço do santuario ?", 
+    alternativaA : "Bezalel, Aisamaque",
+    alternativaB : "Bezalel, Aoliabe",
+    alternativaC : "Aisamaque, Aoliabe",
+    alternativaD : "Uri, Bezalel ",
+    correta : "Bezalel, Aoliabe",
+}
+const q34 = {
+    numQuestao : 34,
+    pergunta : "O que diz em Malaquias cap. 3 vers. 6 ?", 
+    alternativaA : "Quem suportará o dia da sua vinda ?",
+    alternativaB : "Meu concerto com ele foi de vida e de paz ",
+    alternativaC : "Não temos nós todos um mesmo Pai",
+    alternativaD : "Porque eu, o Senhor, não mudo por isso não sois consumido ",
+    correta : "Porque eu, o Senhor, não mudo por isso não sois consumido",
+}
+const q35 = {
+    numQuestao : 35,
+    pergunta : "Quem foi escolhido para fazer parte do ministério e apostolado no lugar de Judas ?", 
+    alternativaA : "Matias",
+    alternativaB : "Barsabás",
+    alternativaC : "Parmenas",
+    alternativaD : "Nicolau",
+    correta : "Matias",
+}
+const q36 = {
+    numQuestao : 36,
+    pergunta : "Onde está escrito: Nenhuma condenação há para os que estão em Cristo, que não anda segundo a carne, mas segundo o espirito ?", 
+    alternativaA : "Romanos cap. 12",
+    alternativaB : "Romanos cap. 5",
+    alternativaC : "Romanos cap. 8",
+    alternativaD : "Romanos cap. 2",
+    correta : "Romanos cap. 8",
+}
+const q37 = {
+    numQuestao : 37,
+    pergunta : "Qual o maior capítulo da Bíblia ?", 
+    alternativaA : "Salmos 18",
+    alternativaB : "Salmos 19",
+    alternativaC : "Salmos 118",
+    alternativaD : "Salmos 119",
+    correta : "Salmos 119",
+}
+const q38 = {
+    numQuestao : 38,
+    pergunta : "Quem era aAvóde Timóteo ?", 
+    alternativaA : "Loíde",
+    alternativaB : "Eunice",
+    alternativaC : "Salomé",
+    alternativaD : "Noemi",
+    correta : "Loíde",
+}
+const q39 = {
+    numQuestao : 39,
+    pergunta : "Em apocalipse, diz que Jesus aparece a João em uma ilha, Qual é essa ilha ? ", 
+    alternativaA : "Tiatira",
+    alternativaB : "das Caveiras",
+    alternativaC : "Patmos",
+    alternativaD : "Éfeso",
+    correta : "Patmos",
+}
+const q40 = {
+    numQuestao : 40,
+    pergunta : "Em apocalipse, quantos anjos proclamaram osjuizos de Deus ?", 
+    alternativaA : "3 Anjos",
+    alternativaB : "7 Anjos",
+    alternativaC : "12 Anjos",
+    alternativaD : "24 Anjos",
+    correta : "3 Anjos",
+}
+const q41 = {
+    numQuestao : 41,
+    pergunta : "Em apocalipse, Um rio puro da água da vida, claro como um cristal procedia de onde ?", 
+    alternativaA : "Jardim do Éden",
+    alternativaB : "Monte da Oliveiras",
+    alternativaC : "Do trono de Deus e do Cordeiro",
+    alternativaD : "Do Santuário",
+    correta : "Do trono de Deus e do Cordeiro",
+}
+const q42 = {
+    numQuestao : 42,
+    pergunta : "Quala cor do cavalo que saiu quando foi aberto o segundo selo ?", 
+    alternativaA : "Vermelho",
+    alternativaB : "Branco",
+    alternativaC : "Preto",
+    alternativaD : "Amarelo",
+    correta : "Vermelho",
+}
+const q43 = {
+    numQuestao : 43,
+    pergunta : "Segundo o calendário Biblico, o mês de Elul representa qual mês", 
+    alternativaA : "Agosto",
+    alternativaB : "Março",
+    alternativaC : "Novembro",
+    alternativaD : "Setembro",
+    correta : "Setembro",
+}
+const q44 = {
+    numQuestao : 44,
+    pergunta : "A jumenta ao ver o Anjo do Senhor, apertou contra a parede o pé de quem ?", 
+    alternativaA : "Balaão filho de Peor",
+    alternativaB : "Balaão filho de Beor",
+    alternativaC : "Balaão filho Zipor",
+    alternativaD : "Balaão filho de Eleazar",
+    correta : "Balaão filho de Beor",
+}
+const q45 = {
+    numQuestao : 45,
+    pergunta : "Qual o nome que Faraó deu a josé ?", 
+    alternativaA : "Safenate-Paneía",
+    alternativaB : "Asenate-Paneía",
+    alternativaC : "Tatenate-Paneía",
+    alternativaD : "Zafenate-Paneía",
+    correta : "Zafenate-Paneía",
+}
+const q46 = {
+    numQuestao : 46,
+    pergunta : "Quantos côvados de comprimento teve a Arca de Noé ?", 
+    alternativaA : "300 Côvados",
+    alternativaB : "200 Côvados",
+    alternativaC : "150 Côvados",
+    alternativaD : "100 Côvados",
+    correta : "300 Côvados",
+}
+const q47 = {
+    numQuestao : 47,
+    pergunta : "Zedequias era filho de Quem ?", 
+    alternativaA : "Micaías",
+    alternativaB : "Josafá",
+    alternativaC : "Inlá",
+    alternativaD : "Quenaana",
+    correta : "Quenaana",
+}
+const q48 = {
+    numQuestao : 48,
+    pergunta : "Que recusou vender a vinha a Acabe ?", 
+    alternativaA : "Os filhos de belial",
+    alternativaB : "Nabote",
+    alternativaC : "Nabal",
+    alternativaD : "Nebaiote",
+    correta : "Nabote",
+}
+const q49 = {
+    numQuestao : 49,
+    pergunta : "Qual o nome do primeiro filho que Oséias teve de Gomer, filha de Diblaim ?", 
+    alternativaA : "Jesreel",
+    alternativaB : "Jezreel",
+    alternativaC : "Jezabel",
+    alternativaD : "Jezabeel",
+    correta : "Jezreel",
+}
+const q50 = {
+    numQuestao : 50,
+    pergunta : "Qual o nome do segundo filho de Isaías ?", 
+    alternativaA : "Sear-Jasube",
+    alternativaB : "Maer Salal-Has-Baz",
+    alternativaC : "Jigleal",
+    alternativaD : "Palti",
+    correta : "Maer Salal-Has-Baz",
+}
+
 
 //constante com um array de objetos com todas as questões
-const questoes = [q0, q1, q2 , q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20, q21, q22, q23, q24, q25, q26, q27, q28, q29, q30]
+const questoes = [q0, q1, q2 , q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20, q21, q22, q23, q24, q25, q26, q27, q28, q29, q30, q31, q32, q33, q34, q35, q36, q37, q38, q39, q40, q41, q42, q43, q44, q45, q46, q47, q48, q49, q50]
 
 let numero = document.querySelector('#numero')
 let total = document.querySelector('#total')
@@ -387,21 +573,24 @@ function tirarPiscar(){
     articleQuestoes.classList.remove('errou')
 }
 
-/*function verificarErro(nQuestao) {
+function verificarErro() {
     let numeroDaQuestao = nQuestao.value
-    let erro = questoes[numeroDaQuestao].alternativas
+   /* let erro = questoes[numeroDaQuestao].alternativas*/
+    
 
-    if ((respostaEscolhida == erro)&&(erro == 3)){
-
-        piscarNoErro()
-        somErro.play()
-        titulo.textContent = "Que pena, você errou 😢 !!"
+    if (respostaEscolhida != correta){
+        totalChance.innerHTML ='😢'
+        chanceUm.innerHTML = '😢'
+       /* piscarNoErro()
+        somErro.play()*/
+        
+        titulo.textContent = "Que pena, você errou mais que três vezes 😢 !!"
         bloquearAlternativas();
         fimDoJogo();
     
 }
 
-}*/
+}
 
 
 function verificarSeAcertou(nQuestao, resposta) {
@@ -413,16 +602,20 @@ function verificarSeAcertou(nQuestao, resposta) {
         piscarNoAcerto()
         somAcerto.play()
         pontos += 10
-        titulo.textContent = "Parabéns você acertou 😊"
+        titulo.textContent = "Parabéns você acertou 😊 !!"
        if(nQuestao.value == 1 && pontos == 20){
             pontos = 10
         }
         
        }else {
+        totalChance += 1
+        chanceUm.innerHTML = '😢'
         piscarNoErro()
         somErro.play()
         titulo.textContent = "Que pena, você errou 😢 !!"
+        
          }
+        
          setTimeout(() => {
             tirarPiscar()
          }, 800);
@@ -433,10 +626,11 @@ function verificarSeAcertou(nQuestao, resposta) {
             nivel.textContent = 'Nível 2';
          }else if((numeroDaQuestao > 19)&&(numeroDaQuestao < 31)){
             nivel.textContent = 'Nível 3';
-         }else(nivel);
-
-         
-
+         }else if((numeroDaQuestao > 29)&&(numeroDaQuestao < 41)){
+            nivel.textContent ='Nível 4';
+         }else if((numeroDaQuestao > 39)&&(numeroDaQuestao < 51)){
+            nivel.textContent = 'Nível 5';
+         }else (nivel);
        //atualizar  o placar
 
        placar = pontos
@@ -459,6 +653,8 @@ function verificarSeAcertou(nQuestao, resposta) {
 
        desbloquearAlternativas()
 }
+ 
+
 
 function fimDoJogo() {
     instrucoes.textContent = "fim do Jogo !!"

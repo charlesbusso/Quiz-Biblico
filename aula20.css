@@ -49,12 +49,46 @@ section {
 h1 {
     text-align: center;
     font-size: 1.15rem;
-    margin: 0.425rem;
+    margin: 5px;
+    background-color: white;
 }
+
+
 
 .centro {
     text-align: center;
     font-size: 1.1rem;
+    
+}
+#chance{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    color: black;
+
+    
+}
+#totalChance{
+    background-color: white;
+    margin-left: 10px;
+    width: 50px;
+    color: black;
+}
+#um{
+    width: 50px;
+    background-color: blue;
+    margin-left: 10px;
+}
+#dois{
+    width: 50px;
+    background-color: orange;
+    margin-left: 10px;
+}
+#tres{
+    width: 50px;
+    background-color: red;
+    margin-left: 10px;
 }
 
 .questao {
