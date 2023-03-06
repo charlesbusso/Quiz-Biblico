@@ -613,17 +613,18 @@ function verificarSeAcertou(nQuestao, resposta) {
         }
         
        }else {
-        vida = 0
-        totalChance.innerHTML = vida += 1
+        vida = 1
+        totalChance.innerHTML = vida 
         chanceUm.innerHTML = '😢'
         piscarNoErro()
         somErro.play()
         titulo.textContent = "Que pena, você errou 😢 !!"
         
          }if(vida == 1){
+            vida = vida += 1
             piscarNoErro()
             somErro.play()
-            vida.innerHTML = vida ++
+           totalChance.innerHTML = vida
             chanceDois.innerHTML = '😢'
             titulo.textContent = "Que pena, você errou 😢 !!"
          }
