@@ -326,7 +326,7 @@ const q31 = {
 }
 const q32 = {
     numQuestao : 32,
-    pergunta : "Quais livors terminam com Interrogação", 
+    pergunta : "Quais livros terminam com Interrogação", 
     alternativaA : "Lamentações, Amós, Jonas",
     alternativaB : "Lamentações, Jonas, Naum",
     alternativaC : "Jonas, Naum, Provérbios",
@@ -349,7 +349,7 @@ const q34 = {
     alternativaB : "Meu concerto com ele foi de vida e de paz ",
     alternativaC : "Não temos nós todos um mesmo Pai",
     alternativaD : "Porque eu, o Senhor, não mudo por isso não sois consumido ",
-    correta : "Porque eu, o Senhor, não mudo por isso não sois consumido",
+    correta : "Porque eu, o Senhor, não mudo por isso não sois consumido ",
 }
 const q35 = {
     numQuestao : 35,
@@ -380,7 +380,7 @@ const q37 = {
 }
 const q38 = {
     numQuestao : 38,
-    pergunta : "Quem era aAvóde Timóteo ?", 
+    pergunta : "Quem era a Avó de Timóteo ?", 
     alternativaA : "Loíde",
     alternativaB : "Eunice",
     alternativaC : "Salomé",
@@ -398,7 +398,7 @@ const q39 = {
 }
 const q40 = {
     numQuestao : 40,
-    pergunta : "Em apocalipse, quantos anjos proclamaram osjuizos de Deus ?", 
+    pergunta : "Em apocalipse, quantos anjos proclamaram os juizos de Deus ?", 
     alternativaA : "3 Anjos",
     alternativaB : "7 Anjos",
     alternativaC : "12 Anjos",
@@ -416,7 +416,7 @@ const q41 = {
 }
 const q42 = {
     numQuestao : 42,
-    pergunta : "Quala cor do cavalo que saiu quando foi aberto o segundo selo ?", 
+    pergunta : "Qual a cor do cavalo que saiu quando foi aberto o segundo selo ?", 
     alternativaA : "Vermelho",
     alternativaB : "Branco",
     alternativaC : "Preto",
