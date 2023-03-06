@@ -77,21 +77,25 @@ h1 {
     width: 50px;
     color: black;
     text-align: center;
+    border-radius: 10px;
 }
 #um{
     width: 50px;
     background-color: white;
     margin-left: 10px;
+    border-radius: 5px;
 }
 #dois{
     width: 50px;
     background-color: white;
     margin-left: 10px;
+    border-radius: 10px;
 }
 #tres{
     width: 50px;
     background-color: white;
     margin-left: 10px;
+   border-radius: 10px;
 }
 
 .questao {
