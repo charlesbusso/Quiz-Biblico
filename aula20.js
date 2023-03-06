@@ -620,11 +620,11 @@ function verificarSeAcertou(nQuestao, resposta) {
         somErro.play()
         titulo.textContent = "Que pena, você errou 😢 !!"
         
-         }if(vida == 1){
+         }if(totalChance == 1){
             vida = vida += 1
             piscarNoErro()
             somErro.play()
-           totalChance.innerHTML = vida
+            totalChance.innerHTML = vida
             chanceDois.innerHTML = '😢'
             titulo.textContent = "Que pena, você errou 😢 !!"
          }
