@@ -9,11 +9,11 @@ let nivel = document.querySelector('h2')
 let somAcerto = document.querySelector('#somAcerto')
 let somErro = document.querySelector('#somErro')
 let somAplausos = document.querySelector('#somAplausos')
-let totalChance = document.getElementById('totalChance')
+let totalChance = document.querySelector('#totalChance')
 let chanceUm = document.getElementById('um')
 let chanceDois = document.getElementById('dois')
 let chanceTres = document.getElementById('tres')
-
+let vida = 0
 
 // pergunta
 
@@ -573,24 +573,29 @@ function tirarPiscar(){
     articleQuestoes.classList.remove('errou')
 }
 
-function verificarErro() {
+  /* function verificarErro() {
     let numeroDaQuestao = nQuestao.value
-   /* let erro = questoes[numeroDaQuestao].alternativas*/
+    let erro = questoes[numeroDaQuestao].alternativas
     
 
     if (respostaEscolhida != correta){
-        totalChance.innerHTML ='😢'
+       
         chanceUm.innerHTML = '😢'
-       /* piscarNoErro()
-        somErro.play()*/
-        
+        piscarNoErro()
+        somErro.play()
         titulo.textContent = "Que pena, você errou mais que três vezes 😢 !!"
         bloquearAlternativas();
         fimDoJogo();
     
+}if((respostaEscolhida != correta)&&(chanceUm === 1)){
+    chanceDois.innerHTML = '😢'
+}
+if(totalChance == 2){
+    chanceTres = '😢'
 }
 
-}
+
+}*/
 
 
 function verificarSeAcertou(nQuestao, resposta) {
@@ -608,12 +613,19 @@ function verificarSeAcertou(nQuestao, resposta) {
         }
         
        }else {
-        totalChance += 1
+        vida = 0
+        totalChance.innerHTML = vida += 1
         chanceUm.innerHTML = '😢'
         piscarNoErro()
         somErro.play()
         titulo.textContent = "Que pena, você errou 😢 !!"
         
+         }if(vida == 1){
+            piscarNoErro()
+            somErro.play()
+            vida.innerHTML = vida ++
+            chanceDois.innerHTML = '😢'
+            titulo.textContent = "Que pena, você errou 😢 !!"
          }
         
          setTimeout(() => {
@@ -696,7 +708,7 @@ function fimDoJogo() {
         pontos = 0 
         location.reload();
 
-    }, 4000)
+    }, 6000)
 }
 
 

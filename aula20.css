@@ -51,6 +51,8 @@ h1 {
     font-size: 1.15rem;
     margin: 5px;
     background-color: white;
+    color: black;
+    border-radius: 5px;
 }
 
 
@@ -61,7 +63,7 @@ h1 {
     
 }
 #chance{
-    width: 150px;
+    width: 200px;
     height: 40px;
     display: flex;
     text-align: center;
@@ -74,20 +76,21 @@ h1 {
     margin-left: 10px;
     width: 50px;
     color: black;
+    text-align: center;
 }
 #um{
     width: 50px;
-    background-color: blue;
+    background-color: white;
     margin-left: 10px;
 }
 #dois{
     width: 50px;
-    background-color: orange;
+    background-color: white;
     margin-left: 10px;
 }
 #tres{
     width: 50px;
-    background-color: red;
+    background-color: white;
     margin-left: 10px;
 }
 
