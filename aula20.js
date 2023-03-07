@@ -631,9 +631,14 @@ function verificarSeAcertou(nQuestao, resposta) {
             vida = 3
             totalChance.innerHTML = vida
             chanceTres.innerHTML = 'x'
+            piscarNoErro();
+            somErro.play();
+            titulo.textContent = "Que pena, você errou!
        }if((respostaEscolhida != certa)&&(vida == 3)){
             vida = 4
-            título.textContent = ' Que pena, você errou mais que três vezes '
+            piscarNoErro ();
+            somErro.play();
+            titulo.textContent = ' Que pena, você errou mais que três vezes '
             fimDoJogo()
        }/*else{
            proximaQuestao(proxima)
