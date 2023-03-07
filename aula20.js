@@ -634,7 +634,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             piscarNoErro();
             somErro.play();
             titulo.textContent = "Que pena, você errou!"
-       }else((respostaEscolhida != certa)&&(vida == 3)){
+       }else if((respostaEscolhida != certa)&&(vida == 3)){
             vida = 4
             piscarNoErro();
             somErro.play();
@@ -643,7 +643,7 @@ function verificarSeAcertou(nQuestao, resposta) {
        }
            
 }
-}
+
 
 
 
