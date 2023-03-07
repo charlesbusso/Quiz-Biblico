@@ -612,7 +612,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             pontos = 10
         
         
-       }else if((respostaEscolhida != certa)&&(vida == 0)){
+       }if((respostaEscolhida != certa)&&(vida == 0)){
         vida = 1
         totalChance.innerHTML = vida
         chanceUm.innerHTML = '😢'
@@ -620,24 +620,24 @@ function verificarSeAcertou(nQuestao, resposta) {
         somErro.play()
         titulo.textContent = "Que pena, você errou 😢 !!"
         
-         }else if((respostaEscolhida != certa)&&(vida == 1)){
+         }if((respostaEscolhida != certa)&&(vida == 1)){
             vida = 2
             piscarNoErro()
             somErro.play()
             totalChance.innerHTML = vida
             chanceDois.innerHTML = '😢'
             titulo.textContent = "Que pena, você errou 😢 !!"
-         }else if((respostaEscolhida != certa)&&(vida == 2)){
+         }if((respostaEscolhida != certa)&&(vida == 2)){
             vida = 3
             totalChance.innerHTML = vida
             chanceTres.innerHTML = 'x'
-       }else if((respostaEscolhida != certa)&&(vida == 3)){
+       }if((respostaEscolhida != certa)&&(vida == 3)){
             vida = 4
             título.textContent = ' Que pena, você errou mais que três vezes '
             fimDoJogo()
-       }else{
+       }/*else{
            proximaQuestao(proxima)
-      }
+      }*/
            
 
 }
