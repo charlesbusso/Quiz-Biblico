@@ -638,7 +638,7 @@ function verificarSeAcertou(nQuestao, resposta) {
        }
            
 
-}
+
 
 
         
