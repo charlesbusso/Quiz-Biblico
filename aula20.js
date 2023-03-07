@@ -639,10 +639,10 @@ function verificarSeAcertou(nQuestao, resposta) {
             piscarNoErro ();
             somErro.play();
             titulo.textContent = ' Que pena, você errou mais que três vezes '
-            fimDoJogo()
+            fimDoJogo();
        }
            
-
+}
 
 
 
