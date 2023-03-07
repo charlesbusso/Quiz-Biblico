@@ -616,9 +616,9 @@ function verificarSeAcertou(nQuestao, resposta) {
         vida = 1
         totalChance.innerHTML = vida
         chanceUm.innerHTML = '😢'
-        /*piscarNoErro()
+        piscarNoErro()
         somErro.play()
-        titulo.textContent = "Que pena, você errou 😢 !!"*/
+        titulo.textContent = "Que pena, você errou 😢 !!"
         
          }else if((respostaEscolhida != certa)&&(vida == 1)){
             vida = 2
