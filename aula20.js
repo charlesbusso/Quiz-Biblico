@@ -608,7 +608,7 @@ function verificarSeAcertou(nQuestao, resposta) {
         somAcerto.play();
         pontos += 10
         titulo.textContent = "Parabéns você acertou 😊 !!"
-      if(nQuestao.value == 1 && pontos == 20){
+      }if(nQuestao.value == 1 && pontos == 20){
             pontos = 10
         
         
