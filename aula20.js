@@ -608,7 +608,7 @@ function verificarSeAcertou(nQuestao, resposta) {
         somAcerto.play();
         pontos += 10
         titulo.textContent = "Parabéns você acertou 😊 !!"
-      }if(nQuestao.value == 1 && pontos == 20){
+      if(nQuestao.value == 1 && pontos == 20){
             pontos = 10
         
         
@@ -636,7 +636,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             titulo.textContent = "Que pena, você errou!
        }if((respostaEscolhida != certa)&&(vida == 3)){
             vida = 4
-            piscarNoErro ();
+            piscarNoErro();
             somErro.play();
             titulo.textContent = ' Que pena, você errou mais que três vezes '
             fimDoJogo();
