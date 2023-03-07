@@ -640,7 +640,7 @@ function verificarSeAcertou(nQuestao, resposta) {
       }
            
 
-
+}
 
 
         
