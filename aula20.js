@@ -642,7 +642,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             fimDoJogo();
        }
            
-}
+
 
 
 
