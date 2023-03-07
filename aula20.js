@@ -612,19 +612,19 @@ function verificarSeAcertou(nQuestao, resposta) {
             pontos = 10
         }
         
-       }else {
+       }else(vida == 0){
         vida = 1
         totalChance.innerHTML = vida 
         chanceUm.innerHTML = '😢'
-        piscarNoErro()
+        /*piscarNoErro()
         somErro.play()
-        titulo.textContent = "Que pena, você errou 😢 !!"
+        titulo.textContent = "Que pena, você errou 😢 !!"*/
         
-         }if(vida == 1){
-            vida += 1
+         }else if(vida == 1){
+            vida = 2
             piscarNoErro()
             somErro.play()
-            totalChance.innerHTML = vida
+            totalChance.innerHTML = 2
             chanceDois.innerHTML = '😢'
             titulo.textContent = "Que pena, você errou 😢 !!"
          }
