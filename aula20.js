@@ -627,7 +627,17 @@ function verificarSeAcertou(nQuestao, resposta) {
             totalChance.innerHTML = vida
             chanceDois.innerHTML = '😢'
             titulo.textContent = "Que pena, você errou 😢 !!"
-         }
+         }else if((respostaEscolhida != certa)&&(vida == 2)){
+            vida = 3
+            totalChance.innerHTML = vida
+            chanceTres.innerHTML = 'd'água
+       }else if((respostaEscolhida != certa)&&(vida == 3)){
+            vida = 4
+            título.textContent = ' Que pena, você errou mais que três vezes '
+            fimDoJogo()
+}
+
+
         
          setTimeout(() => {
             tirarPiscar()
