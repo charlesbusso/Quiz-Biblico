@@ -633,12 +633,12 @@ function verificarSeAcertou(nQuestao, resposta) {
             chanceTres.innerHTML = 'x'
             piscarNoErro();
             somErro.play();
-            titulo.textContent = "Que pena, você errou!
+            titulo.textContent = "Que pena, você errou!"
        }if((respostaEscolhida != certa)&&(vida == 3)){
             vida = 4
             piscarNoErro();
             somErro.play();
-            titulo.textContent = ' Que pena, você errou mais que três vezes '
+            titulo.textContent = "Que pena, você errou mais que três vezes"
             fimDoJogo();
        }
            
