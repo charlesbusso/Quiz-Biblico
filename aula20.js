@@ -612,7 +612,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             pontos = 10
         
         
-       } if((respostaEscolhida != certa)&&(vida == 0)){
+       }else if((respostaEscolhida != certa)&&(vida == 0)){
         vida = 1
         totalChance.innerHTML = vida
         chanceUm.innerHTML = '😢'
