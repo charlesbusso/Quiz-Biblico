@@ -604,40 +604,40 @@ function verificarSeAcertou(nQuestao, resposta) {
     let respostaEscolhida = resposta.textContent
     let certa = questoes[numeroDaQuestao].correta
     if(respostaEscolhida == certa) {
-        piscarNoAcerto()
-        somAcerto.play()
+        piscarNoAcerto();
+        somAcerto.play();
         pontos += 10
         titulo.textContent = "Parabéns você acertou 😊 !!"
        if(nQuestao.value == 1 && pontos == 20){
             pontos = 10
         
         
-       }if((respostaEscolhida != certa)&&(vida == 0)){
+       }else if((respostaEscolhida != certa)&&(vida == 0)){
         vida = 1
         totalChance.innerHTML = vida
         chanceUm.innerHTML = '😢'
-        piscarNoErro()
-        somErro.play()
+        piscarNoErro();
+        somErro.play();
         titulo.textContent = "Que pena, você errou 😢 !!"
         
-         }if((respostaEscolhida != certa)&&(vida == 1)){
+         }else if((respostaEscolhida != certa)&&(vida == 1)){
             vida = 2
-            piscarNoErro()
-            somErro.play()
+            piscarNoErro();
+            somErro.play();
             totalChance.innerHTML = vida
             chanceDois.innerHTML = '😢'
             titulo.textContent = "Que pena, você errou 😢 !!"
-         }if((respostaEscolhida != certa)&&(vida == 2)){
+         }else if((respostaEscolhida != certa)&&(vida == 2)){
             vida = 3
             totalChance.innerHTML = vida
             chanceTres.innerHTML = 'x'
-       }if((respostaEscolhida != certa)&&(vida == 3)){
+       }else if((respostaEscolhida != certa)&&(vida == 3)){
             vida = 4
             título.textContent = ' Que pena, você errou mais que três vezes '
             fimDoJogo()
-       }/*else{
+       }else{
            proximaQuestao(proxima)
-      }*/
+      }
            
 
 }
@@ -646,7 +646,7 @@ function verificarSeAcertou(nQuestao, resposta) {
         
          setTimeout(() => {
             tirarPiscar()
-         }, 800);
+         }, 600);
       
          if ((numeroDaQuestao > 0)&&(numeroDaQuestao < 9)){
             nivel.textContent = 'Nivel 1';
