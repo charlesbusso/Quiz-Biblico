@@ -608,7 +608,7 @@ function verificarSeAcertou(nQuestao, resposta) {
         somAcerto.play();
         pontos += 10
         titulo.textContent = "Parabéns você acertou 😊 !!"
-      }if(nQuestao.value == 1 && pontos == 20){
+      if(nQuestao.value == 1 && pontos == 20){
             pontos = 10
         
         
@@ -620,21 +620,21 @@ function verificarSeAcertou(nQuestao, resposta) {
         somErro.play();
         titulo.textContent = "Que pena, você errou 😢 !!"
         
-         }if((respostaEscolhida != certa)&&(vida == 1)){
+         }else if((respostaEscolhida != certa)&&(vida == 1)){
             vida = 2
             piscarNoErro();
             somErro.play();
             totalChance.innerHTML = vida
             chanceDois.innerHTML = '😢'
             titulo.textContent = "Que pena, você errou 😢 !!"
-         }if((respostaEscolhida != certa)&&(vida == 2)){
+         }else if((respostaEscolhida != certa)&&(vida == 2)){
             vida = 3
             totalChance.innerHTML = vida
             chanceTres.innerHTML = 'x'
             piscarNoErro();
             somErro.play();
             titulo.textContent = "Que pena, você errou!"
-       }if((respostaEscolhida != certa)&&(vida == 3)){
+       }else((respostaEscolhida != certa)&&(vida == 3)){
             vida = 4
             piscarNoErro();
             somErro.play();
@@ -642,6 +642,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             fimDoJogo();
        }
            
+}
 }
 
 
