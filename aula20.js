@@ -652,7 +652,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             somAplausos.play()
         }else {
             proximaQuestao(proxima)
-            titulo.textContent = ''
+           /* titulo.textContent = ''*/
         }
 
        }, 1650);
