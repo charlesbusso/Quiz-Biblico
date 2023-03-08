@@ -72,10 +72,10 @@ h1 {
     
 }
 #totalChance{
-    background-color: white;
-    margin-left: 10px;
-    width: 50px;
-    color: black;
+    background-color: transparent;
+    margin-left: -20px;
+    width: 30px;
+    color: transparent;
     text-align: center;
     border-radius: 10px;
 }
@@ -84,18 +84,30 @@ h1 {
     background-color: white;
     margin-left: 10px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 #dois{
     width: 50px;
     background-color: white;
     margin-left: 10px;
     border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #tres{
     width: 50px;
     background-color: white;
     margin-left: 10px;
-   border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .questao {

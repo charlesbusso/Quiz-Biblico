@@ -470,7 +470,7 @@ const q47 = {
 }
 const q48 = {
     numQuestao : 48,
-    pergunta : "Que recusou vender a vinha a Acabe ?", 
+    pergunta : "Quem recusou vender a vinha a Acabe ?", 
     alternativaA : "Os filhos de belial",
     alternativaB : "Nabote",
     alternativaC : "Nabal",
@@ -488,12 +488,12 @@ const q49 = {
 }
 const q50 = {
     numQuestao : 50,
-    pergunta : "Qual o nome do segundo filho de Isaías ?", 
+    pergunta : "Qual o nome do primeiro filho de Isaías ?", 
     alternativaA : "Sear-Jasube",
     alternativaB : "Maer Salal-Has-Baz",
     alternativaC : "Jigleal",
     alternativaD : "Palti",
-    correta : "Maer Salal-Has-Baz",
+    correta : "Sear-Jasube",
 }
 
 
@@ -537,13 +537,7 @@ function proximaQuestao(nQuestao) {
     c.setAttribute('value', nQuestao+'C')
     d.setAttribute('value', nQuestao+'D')
 }
-/*alternativas.addEventListener('dblclick', () => {
-    pontos -= 10
-    if(numQuestao.value == 30 && pontos == 310){
-        pontos = 300
-    }
 
-})*/
 
 function bloquearAlternativas() {
   a.classList.add('bloqueado')
@@ -573,29 +567,6 @@ function tirarPiscar(){
     articleQuestoes.classList.remove('errou')
 }
 
-  /* function verificarErro() {
-    let numeroDaQuestao = nQuestao.value
-    let erro = questoes[numeroDaQuestao].alternativas
-    
-
-    if (respostaEscolhida != correta){
-       
-        chanceUm.innerHTML = '😢'
-        piscarNoErro()
-        somErro.play()
-        titulo.textContent = "Que pena, você errou mais que três vezes 😢 !!"
-        bloquearAlternativas();
-        fimDoJogo();
-    
-}if((respostaEscolhida != correta)&&(chanceUm === 1)){
-    chanceDois.innerHTML = '😢'
-}
-if(totalChance == 2){
-    chanceTres = '😢'
-}
-
-
-}*/
 
 
 function verificarSeAcertou(nQuestao, resposta) {
@@ -615,7 +586,7 @@ function verificarSeAcertou(nQuestao, resposta) {
        }else if((respostaEscolhida != certa)&&(vida == 0)){
         vida = 1
         totalChance.innerHTML = vida
-        chanceUm.innerHTML = '😢'
+        chanceUm.innerHTML = '😬'
         piscarNoErro();
         somErro.play();
         titulo.textContent = "Que pena, você errou 😢 !!"
@@ -625,20 +596,23 @@ function verificarSeAcertou(nQuestao, resposta) {
             piscarNoErro();
             somErro.play();
             totalChance.innerHTML = vida
-            chanceDois.innerHTML = '😢'
+            chanceDois.innerHTML = '😬'
             titulo.textContent = "Que pena, você errou 😢 !!"
          }else if((respostaEscolhida != certa)&&(vida == 2)){
             vida = 3
             totalChance.innerHTML = vida
-            chanceTres.innerHTML = 'x'
+            chanceTres.innerHTML = '😬'
             piscarNoErro();
             somErro.play();
-            titulo.textContent = "Que pena, você errou!"
+            titulo.textContent = "ATENÇÃO, NO PRÓXIMO ERRO, É FIM DE JOGO !!! 😬😬😬😬"
        }else if((respostaEscolhida != certa)&&(vida == 3)){
             vida = 4
             piscarNoErro();
             somErro.play();
-            titulo.textContent = "Que pena, você errou mais que três vezes"
+            titulo.textContent = "Ahhhh, você errou mais que três vezes 😢!"
+            chanceUm.style.background = "red";
+            chanceDois.style.background = "red";
+            chanceTres.style.background = "red";
             fimDoJogo();
        }
            
@@ -709,16 +683,8 @@ function fimDoJogo() {
     c.setAttribute('value', '0')
     d.setAttribute('value', '0')
 
-    
-
-    if(pontos < 80){
-        titulo.textContent = "Precisa estudar mais, Você não sabe muito sobre a Bíblia 😢!"
-    }else if((pontos > 80)&&(pontos < 150)){
-        titulo.textContent = "Você acertou algumas questões, mais tem que estudar mais! 😢"
-    }else if((pontos > 160)&&(pontos < 290)){
-        titulo.textContent = "Parabéns, Você sabe bastante da Bíblia 😊"
-    }else if((pontos > 290)&&(pontos < 320)){ 
-    titulo.textContent = "Parabéns, Você acertou todas as perguntas e sabe muito, mais muito sobre a Bíblia 😊😊😊😊😊"
+  if((pontos > 470)&&(pontos < 510)){ 
+    titulo.textContent = "Parabéns, Você sabe muito, mais muito sobre a Bíblia 😊😊😊😊😊"
     }else(titulo.textContent = '')
 
     //ocultar o article da questao
@@ -728,8 +694,9 @@ function fimDoJogo() {
         pontos = 0 
         location.reload();
 
-    }, 6000)
+    }, 7000)
 }
+
 
 
 
