@@ -609,7 +609,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             vida = 4
             piscarNoErro();
             somErro.play();
-            titulo.textContent = "Ahhhh, você errou mais que três vezes 😢!"
+            titulo.textContent = "Ahhhh,Que pena, você errou mais que três vezes 😢!"
             chanceUm.style.background = "red";
             chanceDois.style.background = "red";
             chanceTres.style.background = "red";
@@ -652,7 +652,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             somAplausos.play()
         }else {
             proximaQuestao(proxima)
-           /* titulo.textContent = ''*/
+            titulo.textContent = ''
         }
 
        }, 1650);
@@ -685,8 +685,11 @@ function fimDoJogo() {
 
   if((pontos > 470)&&(pontos < 510)){ 
     titulo.textContent = "Parabéns, Você sabe muito, mais muito sobre a Bíblia 😊😊😊😊😊"
-    }else(titulo.textContent = '')
-
+    }else
+        (titulo.textContent = 'Ahhhh,Que pena, você errou mais que três vezes 😢!');
+        (instrucoes.textContent = " Parabéns ,Você conseguiu " + pontos + " " + pont)
+        
+   
     //ocultar o article da questao
 
     articleQuestoes.style.display = 'none'
@@ -696,6 +699,7 @@ function fimDoJogo() {
 
     }, 7000)
 }
+ 
 
 
 

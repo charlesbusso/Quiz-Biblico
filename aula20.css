@@ -51,7 +51,7 @@ h1 {
     font-size: 1.15rem;
     margin: 5px;
     background-color: white;
-    color: black;
+    color: #191919;
     border-radius: 5px;
 }
 
@@ -67,7 +67,7 @@ h1 {
     height: 40px;
     display: flex;
     text-align: center;
-    color: black;
+    color: #191919;
 
     
 }
@@ -87,6 +87,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: piscar .75s infinite alternate;
     
 }
 #dois{
@@ -98,6 +99,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: piscar .75s infinite alternate;
 }
 #tres{
     width: 50px;
@@ -108,6 +110,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: piscar .75s infinite alternate;
 }
 
 .questao {
