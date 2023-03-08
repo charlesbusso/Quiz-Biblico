@@ -640,9 +640,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             somErro.play();
             titulo.textContent = "Que pena, você errou mais que três vezes"
             fimDoJogo();
-       }else{
-            proximaQuestao(proxima)
-     }
+       }
            
 
 
