@@ -110,7 +110,7 @@ const q7 = {
 }
 const q8 = {
     numQuestao : 8,
-    pergunta : "José sonhou que o sol, a lua e 11 estrelas se uncurvavam perante ele. O que isso quer dizer ?", 
+    pergunta : "José sonhou que o sol, a lua e 11 estrelas se encurvavam perante ele. O que isso quer dizer ?", 
     alternativaA : "Que ele será um deus",
     alternativaB : "Que o pai, mãe e seus irmaos se encurvariam a ele",
     alternativaC : "Que ele é um anjo de Deus",
